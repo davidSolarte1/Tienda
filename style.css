@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F0FF42;
+}
+
+.banner{
+    background-color:  #54B435;
+    width: 100%;
+    height: 80px;
+    padding: 0 170px;
+}
+.fila{
+    display: flex;
+}
+
+.logo{
+    width: 140px;
+    height: 80px;
+    
+}
+
+.img{
+    text-align: center;
+    padding-top: 3px;
+    padding-left: 7px;
+    height: 74px;
+}
+
+.buscador{
+    width: 450px;
+    height: 40px;
+    margin-top: 20px;   
+}
+.campo{
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.buscar{
+    
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.lupa{
+
+    font-size: 25px;
+    cursor: pointer;
+}
+.acceso{
+    margin-top: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    height: 50px;
+    border-radius: 10px;
+}
+.boton{
+    color: black;
+}
+.opt{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.texto{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    
+    font-size: 18px;
+}
+.botonesban{
+    width: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.lupa:hover{
+    color: chocolate;
+}
+.acceso:hover{
+    background-color: #81cd4781;
+}
+.boton:hover{
+    color: chocolate;
+}
+/*Productos*/
+
+.productos{
+    background-color: #379237;
+    margin: auto;
+    padding-left: 400px;
+    height: 38px;
+    
+}
+
+.nav li a{
+    
+    background-color: #379237;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav > li{
+    float: left;
+}
+
+
+.nav li a:hover{
+    color: white;
+    background-color: #82CD47;
+    
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+/*menús*/
+
+/*lineas*/
+.linea{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.v-line{
+    height: 60px;
+    border-color: #D5DDDF;
+}
+hr{
+    border-color: #D5DDDF;
+}
+/*Main*/
+
+
+.principal{
+    max-width: calc(100vw - 100px);
+    border-radius: 10px;
+    margin-top: 20px;
+    
+    background-color: white;
+    margin-left: 50px;
+    width: calc(100vw - 100px);
+    display: flex;
+}
+.mostrador{
+    width: 100%;
+    transition: .5s ease;
+    margin: 0 30px;
+}
+
+#fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.item{
+    
+    max-width: 210px;
+    padding: 30px;
+    text-align: center;
+    margin: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+
+}
+
+.item:hover{
+    background-color: #e6e6e6;
+}
+ 
+.item img{
+    width: 100%;
+    margin: 30px 0;
+}
+.descripcion{
+    font-weight: bold;
+}
+.precio{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/*Visualizacion del producto*/
+
+.seleccion{
+    transition: .5s ease;
+    opacity: 0;
+    width: 0%;
+    border: 1px solid #ccc;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cerrar{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer
+    ;
+}
+
+.info{
+    padding: 20px;
+}
+.info img{
+    display: block;
+    margin: 30px;
+    width: 80%;
+}
+.info h2{
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 14px;
+    margin-bottom: 10px
+}
+
+.detalles{
+    display: none;
+}
+
+.car{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+.info .precio{
+     font-size: 30px;
+     font-weight: bold;
+     margin-bottom: 10px;
+     display: block;
+
+}
+
+.info button{
+    height: 40px;
+    border: none;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #f85151;
+}
+/*footer*/
+footer{
+    margin-top: 20px;
+    height: 50px;
+    background-color: #1b2727;
+}

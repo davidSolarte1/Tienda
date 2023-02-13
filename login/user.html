@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="logo">
+            <a href="../index.php "><img class="img" src="img/logo-removebg-preview.png" alt=""></a>
+        </div>
+    </div>
+    
+    <div class="ingreso">
+        <h2>¡Bienvenido!</h2>
+        <center>
+            <form action="hub/fphp/login_user.php" method="post">
+                <table border="0">
+                    <tr>
+                        <td>
+                            E-mail:
+                        </td>
+                        <td>
+                            <input type="text" name="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Contraseña:
+                        </td>
+                        <td>
+                            <input type="password" name="pass" required>
+                        </td>
+                    </tr>
+                </table>
+                <a href="#">Olvidé mi Contraseña</a>
+                <br>
+                <button class="inicio">Iniciar Sesión</button>
+                <br>
+            </form>
+            <button class="crear"><a href="hub/registro.php">Crear Cuenta</a> </button> 
+            <hr>
+            <h4>O ingresa con</h4>
+
+            <button class="redes"><a href=""><img class="red" src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""> Facebook</a></button>
+            <button class="redes"><a href=""><img class="red" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gmail.max-1100x1100.png" alt=""> Google</a></button>
+            <button class="redes"><a href=""><img class="red" src="https://help.apple.com/assets/6362E7DEA3F8E977B215F75A/6362E7DFA3F8E977B215F761/es_419/cfef5ce601689564e0a39b4773f20815.png" alt=""> Apple</a></button>
+
+        </center>
+
+    </div>
+</body>
+</html>
