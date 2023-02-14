@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Siempre hay una primera vez</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -16,81 +17,96 @@
     
     <div class="registro">
         <h2>¡Siempre hay una primera vez!</h2>
-        <center>
-            <form action="fphp/registro_usuario.php" method="post">
-                <table border="0">
-                    <tr>
-                        <td>
-                            Cedula:
-                        </td>
-                        <td>
-                            <input type="text" name="cedula" required>
-                        </td>
-                        <td>
-                            Fecha de Nacimineto:
-                        </td>
-                        <td>
-                            <input type="date" name="fecha" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Nombres:
-                        </td>
-                        <td>
-                            <input type="text" name="nombres" required>
-                        </td>
-                        <td>
-                            Apellidos:
-                        </td>
-                        <td>
-                            <input type="text" name="apellidos"required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            E-mail:
-                        </td>
-                        <td>
-                            <input type="text" name="email" required>
-                        </td>
-                        <td>
-                            Confirmar E-mail:
-                        </td>
-                        <td>
-                            <input type="text" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Contraseña:
-                        </td>
-                        <td>
-                            <input type="password" name="pass" required>
-                        </td>
-                        <td>
-                            Confirmar Contraseña:
-                        </td>
-                        <td>
-                            <input type="password" required>
-                        </td>
-                    </tr>
-                </table>
-                
-                <br>
-                <button class="reg">Registrarme</button>
-                <br>
-                
-            </form>
-            <hr>
-            <h4>O ingresa con</h4>
+        <form action="fphp/registro_usuario.php" method="post" class="formulario">
+            
+        <div class="formulario__grupo" id="grupo__usuario">
+            <label for="cedula" class="formulario__label">Cedula</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Juan Perez">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La cedula solo puede contener digitos.</p>
+        </div>
 
-            <button class="redes"><a href=""><img class="red" src="https://www.facebook.com/images/fb_icon_325x325.png" alt=""> Facebook</a></button>
-            <button class="redes"><a href=""><img class="red" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gmail.max-1100x1100.png" alt=""> Google</a></button>
-            <button class="redes"><a href=""><img class="red" src="https://help.apple.com/assets/6362E7DEA3F8E977B215F75A/6362E7DFA3F8E977B215F761/es_419/cfef5ce601689564e0a39b4773f20815.png" alt=""> Apple</a></button>
-        </center>
+        <!-- Grupo: Fecha -->
+        <div class="formulario__grupo" id="grupo__fecha">
+            <label for="fecha" class="formulario__label">Fecha de Nacimeinto</label>
+            <div class="formulario__grupo-input">
+                <input type="date" class="formulario__input" name="fecha" id="fecha">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La fecha de nacimiento no puede ser mayor a la fecha actual.</p>
+        </div>
 
+        <!-- Grupo: Nombres -->
+        <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Nombres</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombres" id="nombres">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Su nombre solo puede contener letras.</p>
+        </div>
+
+        <!-- Grupo: Apellidos -->
+        <div class="formulario__grupo" id="grupo__apellidos">
+            <label for="apellidos" class="formulario__label">Apellidos</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="apellidos" id="nombres">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Su apellido solo puede contener letras.</p>
+        </div>
+
+        <!-- Grupo: Correo Electronico -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo Electrónico</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="email" id="email" placeholder="correo@correo.com">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+        </div>
+
+        <!-- Grupo: Correo Electronico 2 -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Repetir Correo Electrónico</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="email2" id="email2" placeholder="correo@correo.com">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+        </div>
+
+        <!-- Grupo: Contraseña -->
+        <div class="formulario__grupo" id="grupo__password">
+            <label for="password" class="formulario__label">Contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="pass" id="pass">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+        </div>
+
+        <!-- Grupo: Contraseña 2 -->
+        <div class="formulario__grupo" id="grupo__password2">
+            <label for="password2" class="formulario__label">Repetir Contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="pass2" id="pass2">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Registrarme</button>
+			</div>
+
+        
+        
+
+        </form>
     </div>
-    
+    <script src="formulario.js"></script>
 </body>
 </html>
