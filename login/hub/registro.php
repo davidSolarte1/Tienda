@@ -17,12 +17,12 @@
     
     <div class="registro">
         <h2>¡Siempre hay una primera vez!</h2>
-        <form action="fphp/registro_usuario.php" method="post" class="formulario">
+        <form action="fphp/registro_usuario.php" method="post" class="formulario" id="formulario">
             
         <div class="formulario__grupo" id="grupo__usuario">
             <label for="cedula" class="formulario__label">Cedula</label>
             <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Juan Perez">
+                <input type="text" class="formulario__input" name="cedula" id="cedula" placeholder="123456789">
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
             <p class="formulario__input-error">La cedula solo puede contener digitos.</p>
@@ -39,7 +39,7 @@
         </div>
 
         <!-- Grupo: Nombres -->
-        <div class="formulario__grupo" id="grupo__nombre">
+        <div class="formulario__grupo" id="grupo__nombres">
             <label for="nombre" class="formulario__label">Nombres</label>
             <div class="formulario__grupo-input">
                 <input type="text" class="formulario__input" name="nombres" id="nombres">
@@ -52,7 +52,7 @@
         <div class="formulario__grupo" id="grupo__apellidos">
             <label for="apellidos" class="formulario__label">Apellidos</label>
             <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="apellidos" id="nombres">
+                <input type="text" class="formulario__input" name="apellidos" id="apellidos">
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
             <p class="formulario__input-error">Su apellido solo puede contener letras.</p>
@@ -69,7 +69,7 @@
         </div>
 
         <!-- Grupo: Correo Electronico 2 -->
-        <div class="formulario__grupo" id="grupo__correo">
+        <div class="formulario__grupo" id="grupo__correo2">
             <label for="correo" class="formulario__label">Repetir Correo Electrónico</label>
             <div class="formulario__grupo-input">
                 <input type="email" class="formulario__input" name="email2" id="email2" placeholder="correo@correo.com">
@@ -98,8 +98,18 @@
             <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
         </div>
 
+        <div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+        <div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
         <div class="formulario__grupo formulario__grupo-btn-enviar">
 				<button type="submit" class="formulario__btn">Registrarme</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 			</div>
 
         
