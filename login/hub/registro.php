@@ -32,7 +32,7 @@
         <div class="formulario__grupo" id="grupo__fecha">
             <label for="fecha" class="formulario__label">Fecha de Nacimeinto</label>
             <div class="formulario__grupo-input">
-                <input type="date" class="formulario__input" name="fecha" id="fecha">
+                <input type="date" class="formulario__input" name="fecha" id="fecha" max="2023-02-14">
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
             <p class="formulario__input-error">La fecha de nacimiento no puede ser mayor a la fecha actual.</p>

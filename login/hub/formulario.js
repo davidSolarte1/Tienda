@@ -6,6 +6,7 @@ const expresiones ={
     nombres: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
     apellidos:/^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
     password: /^.{4,12}$/, // 4 a 12 digitos.
+    fecha: /^.{4,12}$/,
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     
 
@@ -13,8 +14,8 @@ const expresiones ={
 
 const campos = {
 
-    cedula: false,
-    
+    usuario: false,
+    fecha : false,
     nombres: false,
     apellidos: false,
     email: false,
@@ -26,11 +27,11 @@ const validarFormulario = (e) => {
         case "cedula":
             validarCampo(expresiones.cedula, e.target, 'usuario');
         break;
-/*
-        case "fecha":
 
+        case "fecha":
+            validarCampo(expresiones.fecha ,e.target, 'fecha');
         break;
-*/
+
         case "nombres":
             validarCampo(expresiones.nombres ,e.target, 'nombres');
         break;
@@ -130,7 +131,7 @@ formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const terminos = document.getElementById('terminos');
-    if(campos.cedula && campos.nombres && campos.apellidos && campos.email && campos.password && terminos.checked){
+    if(campos.usuario && campos.fecha && campos.nombres && campos.apellidos && campos.email && campos.password && terminos.checked){
         formulario.reset();
 
         document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
