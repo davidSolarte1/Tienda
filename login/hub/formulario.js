@@ -14,7 +14,7 @@ const expresiones ={
 
 const campos = {
 
-    usuario: false,
+    cedula: false,
     fecha : false,
     nombres: false,
     apellidos: false,
@@ -25,7 +25,7 @@ const campos = {
 const validarFormulario = (e) => {
     switch(e.target.name) {
         case "cedula":
-            validarCampo(expresiones.cedula, e.target, 'usuario');
+            validarCampo(expresiones.cedula, e.target, 'cedula');
         break;
 
         case "fecha":
@@ -127,23 +127,19 @@ inputs.forEach((input)=> {
     input.addEventListener('blur', validarFormulario);
 });
 
+
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const terminos = document.getElementById('terminos');
-    if(campos.usuario && campos.fecha && campos.nombres && campos.apellidos && campos.email && campos.password && terminos.checked){
+    
+    if(campos.cedula && campos.fecha && campos.nombres && campos.apellidos && campos.email && campos.password){
+        formulario.submit();
         formulario.reset();
 
-        document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-		setTimeout(() => {
-			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-		}, 5000);
-
-
-        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-            icono.classList.remove('formulario__grupo-correcto');
-        });
+        
+    
     }else{
         document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+        
     }
 });
