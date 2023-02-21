@@ -14,7 +14,7 @@
     <div class="banner">
         <div class="fila">
             <div class="logo">
-                <img class="img" src="img/logo-removebg-preview.png" alt="">
+                <a href="index.php "><img class="img" src="img/logo-removebg-preview.png" alt=""></a>
             </div>
             <div class="buscador">
                 <input type="text" class="campo" placeholder="Buscar producto">
@@ -165,7 +165,7 @@
                 <div class="cerrar" onclick="cerrar()">
                     &#x2715
                 </div>
-                <div class="info">
+                <div class="info"> 
                     <img src="img/ArrozDiana.png" alt="" id="img">
                     <h2 id="modelo">Arroz Diana </h2>
                     <p class="car">Características principales:</p>

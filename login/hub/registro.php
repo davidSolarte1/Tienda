@@ -11,7 +11,7 @@
 
     <div class="banner">
         <div class="logo">
-            <img class="img" src="img/logo-removebg-preview.png" alt="">
+            <a href="../../index.php "><img class="img" src="img/logo-removebg-preview.png" alt=""></a>
         </div>
     </div>
     

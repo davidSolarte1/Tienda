@@ -25,7 +25,7 @@
     <div class="banner">
         <div class="fila">
             <div class="logo">
-                <img class="img" src="../img/logo-removebg-preview.png" alt="">
+            <a href="../index.php "><img class="img" src="../img/logo-removebg-preview.png" alt=""></a>
             </div>
             <div class="buscador">
                 <input type="text" class="campo" placeholder="Buscar producto">
