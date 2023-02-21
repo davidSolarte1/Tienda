@@ -36,7 +36,7 @@
                 </label>
             </div>
             <div class="acceso">
-                <a href="../login/user.html" class="boton">
+                <a href="../login/acount.php" class="boton">
                     <div class="fila">
                         <div class="opt">
                             <label for=""class="botonesban">
@@ -44,7 +44,7 @@
                             </label>
                         </div> 
                         <div class="texto">
-                            Iniciar Sesión
+                            Mi Cuenta
                         </div>
                     </div>
                 </a>

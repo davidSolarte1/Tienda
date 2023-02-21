@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    
+    text-decoration: none  ;
     list-style: none;
     box-sizing: border-box;
 }
@@ -106,4 +106,17 @@ body{
 }
 .boton:hover{
     color: chocolate;
+}
+
+.linea{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.v-line{
+    height: 60px;
+    border-color: #D5DDDF;
+}
+hr{
+    border-color: #D5DDDF;
 }
