@@ -8,7 +8,7 @@
     $password   = $_POST['pass'];
 
 //encriptar contraseña
-    $password   =hash('sha512', $password);
+    //$password   =hash('sha512', $password);
 
     $query =    "INSERT INTO usuarios(cedula, nombres, apellidos, nacimiento, correo, pass )
                 VALUES ('$cedula' ,'$nombres', '$apellidos','$nacimiento', '$correo', '$password')";
