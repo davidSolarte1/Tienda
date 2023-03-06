@@ -75,50 +75,7 @@ if(!isset($_SESSION['usuario'])){
         </div>
     </div>
     
-    <div class="productos">
-        <ul class="nav">
-            <li class="opc">
-                <a href="#">Aseo</a> 
-                <ul>
-                    <li><a href="#">Limpeza de Ropa</a></li>
-                    <li><a href="#">Limpeza de Hogar</a></li>
-                    <li><a href="#">Limpeza de Cocina</a></li>
-                </ul>
-            </li>
-            <li class="opc">
-                <a href="#"> Cuidado Personal</a>
-                <ul>
-                    <li><a href="#">Aseo Personal</a></li>
-                    <li><a href="#">Cuidado Facial</a></li>
-
-                </ul>
-            </li>
-            <li class="opc" >
-                <a href="#"> Alimentos</a>
-                <ul>
-                    <li><a href="#">Enlatados</a></li>
-                    <li><a href="#">Empaquetados</a></li>
-                    <li><a href="#">Refrescos</a></li>
-                    <li><a href="#">Granos</a></li>
-                </ul>
-            </li>
-            <li class="opc">
-                <a href="#">Medicamentos</a> 
-                <ul>
-                    <li><a href="#">Jarabes</a></li>
-                    <li><a href="#">Pastillas</a></li>
-                </ul>
-
-            </li>
-            <li class="opc">
-                <a href="#">Mascotas</a>
-                <ul>
-                    <li><a href="#">Comida para Perros</a></li>
-                    <li><a href="#">Comida para Gatos</a> </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+    
     <main>
         <section class="principal">
             <h2>Bienvenido al himalaya</h2>
